@@ -1,0 +1,40 @@
+.homescreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.homescreen_title {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-bottom: 1rem;
+  margin-left: 8px;
+}
+
+.homesreen_products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1536px) {
+  .homesreen_products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1130px) {
+  .homesreen_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .homesreen_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .homesreen_products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
